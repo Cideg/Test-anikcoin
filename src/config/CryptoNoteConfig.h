@@ -77,8 +77,8 @@ const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 10000; //size of block (bytes) after which reward for block calculated using block size
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
-const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 2; // the number of decimal points to display in the wallet and other software
-const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 4;
+const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 2;
+const size_t   CRYPTONOTE_DUST_DECIMAL_POINT                 = 4;
 
 //DustFund Parameters
 const uint64_t CRYPTONOTE_DUST_OUT_LIMIT					 = UINT64_C(1000000); //the limit up to which dust outs should be removed and contributed back to the dust fund
