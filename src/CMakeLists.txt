@@ -114,13 +114,13 @@ add_dependencies(P2P version)
 add_dependencies(cryptotest version)
 
 # Finally build the binaries
-set_property(TARGET TurtleCoind PROPERTY OUTPUT_NAME "TurtleCoind")
+set_property(TARGET TurtleCoind PROPERTY OUTPUT_NAME "Anikcoind")
 set_property(TARGET zedwallet PROPERTY OUTPUT_NAME "zedwallet")
-set_property(TARGET service PROPERTY OUTPUT_NAME "turtle-service")
+set_property(TARGET service PROPERTY OUTPUT_NAME "Anik-service")
 set_property(TARGET miner PROPERTY OUTPUT_NAME "miner")
 set_property(TARGET cryptotest PROPERTY OUTPUT_NAME "cryptotest")
 
 # Additional make targets
-add_custom_target(pool DEPENDS TurtleCoind service)
-add_custom_target(solominer DEPENDS TurtleCoind zedwallet miner)
-add_custom_target(cli DEPENDS TurtleCoind zedwallet)
+add_custom_target(pool DEPENDS Anikcoind service)
+add_custom_target(solominer DEPENDS Anikcoind zedwallet miner)
+add_custom_target(cli DEPENDS Anikcoind zedwallet)
